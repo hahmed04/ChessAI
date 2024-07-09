@@ -1,3 +1,3 @@
 # ChessAI ♟️
 
-- Play against our own Chess AI!! 🤖
+- Play against our own Chess AI!! 🤖 
