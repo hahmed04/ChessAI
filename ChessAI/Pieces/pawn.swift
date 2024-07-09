@@ -7,9 +7,12 @@
 
 import Foundation
 import SwiftUI
+
+
+
 struct Pawn: ChessPiece {
     var position: (Int, Int)
-    let color: Color
+    let color: Player
     var image: Image {
         color == .white ? Image("white_pawn") : Image("black_pawn")  // Use a custom image in your app assets
     }

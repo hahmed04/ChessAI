@@ -10,7 +10,7 @@ import SwiftUI
 
 protocol ChessPiece {
     var position: (Int, Int) { get set }
-    var color: Color { get }
+    var color: Player { get }
     var image: Image { get }
     func availableMoves(in board: [[ChessPiece?]]) -> [(Int, Int)]
     mutating func move(to position: (Int, Int))
