@@ -68,6 +68,18 @@ struct ContentView: View {
             board[0][4] = King(position: (0, 4), color: .white) // White king's starting position
             board[7][4] = King(position: (7, 4), color: .black) // Black king's starting position
         
+        // Initialize bishops
+            board[0][2] = Bishop(position: (0, 2), color: .white)
+            board[0][5] = Bishop(position: (0, 5), color: .white)
+            board[7][2] = Bishop(position: (7, 2), color: .black)
+            board[7][5] = Bishop(position: (7, 5), color: .black)
+            
+            // Initialize rooks
+            board[0][0] = Rook(position: (0, 0), color: .white)
+            board[0][7] = Rook(position: (0, 7), color: .white)
+            board[7][0] = Rook(position: (7, 0), color: .black)
+            board[7][7] = Rook(position: (7, 7), color: .black)
+        
             
         
 
