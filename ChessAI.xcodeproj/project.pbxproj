@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		7E9B3CCE2C3CE40800A7A9EC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B3CCD2C3CE40800A7A9EC /* Player.swift */; };
 		7E9B3CD02C3CE56300A7A9EC /* chesspieces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B3CCF2C3CE56300A7A9EC /* chesspieces.swift */; };
-		7E9B3CD32C3CE5BF00A7A9EC /* pawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B3CD22C3CE5BF00A7A9EC /* pawn.swift */; };
+		7E9B3CD32C3CE5BF00A7A9EC /* Pawn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B3CD22C3CE5BF00A7A9EC /* Pawn.swift */; };
 		7E9B3CD52C3D7F7300A7A9EC /* Knight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B3CD42C3D7F7300A7A9EC /* Knight.swift */; };
+		7E9B3CD72C3D862B00A7A9EC /* Queen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9B3CD62C3D862B00A7A9EC /* Queen.swift */; };
 		FE5EC5382C3CCB6D006D4539 /* ChessAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EC5372C3CCB6D006D4539 /* ChessAIApp.swift */; };
 		FE5EC53A2C3CCB6D006D4539 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EC5392C3CCB6D006D4539 /* ContentView.swift */; };
 		FE5EC53C2C3CCB70006D4539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5EC53B2C3CCB70006D4539 /* Assets.xcassets */; };
@@ -21,8 +22,9 @@
 /* Begin PBXFileReference section */
 		7E9B3CCD2C3CE40800A7A9EC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7E9B3CCF2C3CE56300A7A9EC /* chesspieces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chesspieces.swift; sourceTree = "<group>"; };
-		7E9B3CD22C3CE5BF00A7A9EC /* pawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pawn.swift; sourceTree = "<group>"; };
+		7E9B3CD22C3CE5BF00A7A9EC /* Pawn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pawn.swift; sourceTree = "<group>"; };
 		7E9B3CD42C3D7F7300A7A9EC /* Knight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knight.swift; sourceTree = "<group>"; };
+		7E9B3CD62C3D862B00A7A9EC /* Queen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queen.swift; sourceTree = "<group>"; };
 		FE5EC5342C3CCB6D006D4539 /* ChessAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5EC5372C3CCB6D006D4539 /* ChessAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessAIApp.swift; sourceTree = "<group>"; };
 		FE5EC5392C3CCB6D006D4539 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,8 +48,9 @@
 			isa = PBXGroup;
 			children = (
 				7E9B3CCF2C3CE56300A7A9EC /* chesspieces.swift */,
-				7E9B3CD22C3CE5BF00A7A9EC /* pawn.swift */,
+				7E9B3CD22C3CE5BF00A7A9EC /* Pawn.swift */,
 				7E9B3CD42C3D7F7300A7A9EC /* Knight.swift */,
+				7E9B3CD62C3D862B00A7A9EC /* Queen.swift */,
 			);
 			path = Pieces;
 			sourceTree = "<group>";
@@ -164,8 +167,9 @@
 				7E9B3CCE2C3CE40800A7A9EC /* Player.swift in Sources */,
 				FE5EC5382C3CCB6D006D4539 /* ChessAIApp.swift in Sources */,
 				FE5EC54A2C3CED44006D4539 /* DebuggingView.swift in Sources */,
+				7E9B3CD72C3D862B00A7A9EC /* Queen.swift in Sources */,
 				7E9B3CD02C3CE56300A7A9EC /* chesspieces.swift in Sources */,
-				7E9B3CD32C3CE5BF00A7A9EC /* pawn.swift in Sources */,
+				7E9B3CD32C3CE5BF00A7A9EC /* Pawn.swift in Sources */,
 				7E9B3CD52C3D7F7300A7A9EC /* Knight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
