@@ -51,10 +51,15 @@ struct ContentView: View {
     private func initializeBoard() {
         // Initialize the white pawn at (1, 0)
         for i in 0...7 {
-            board[1][i] = Pawn(position: (1, 0), color: .white)
-            board[6][i] = Pawn(position: (1, 0), color: .black)
+            board[1][i] = Pawn(position: (1, i), color: .white)
+            board[6][i] = Pawn(position: (6, i), color: .black)
         }
-       
+        // Initialize knights
+            board[0][1] = Knight(position: (0, 1), color: .white)
+            board[0][6] = Knight(position: (0, 6), color: .white)
+            board[7][1] = Knight(position: (7, 1), color: .black)
+            board[7][6] = Knight(position: (7, 6), color: .black)
+        
 
    }
     

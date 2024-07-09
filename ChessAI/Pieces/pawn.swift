@@ -11,7 +11,7 @@ struct Pawn: ChessPiece {
     var position: (Int, Int)
     let color: Color
     var image: Image {
-        color == .white ? Image("white_pawn") : Image("black_pawn")  // Use a custom image in your app assets
+        color == .white ? Image("white_pawn") : Image("black_pawn")  // Customize with actual asset names
     }
 
     func availableMoves(in board: [[ChessPiece?]]) -> [(Int, Int)] {
@@ -20,7 +20,15 @@ struct Pawn: ChessPiece {
         let forward = (position.0 + direction, position.1)
         if isValidPosition(forward) && board[forward.0][forward.1] == nil {
             moves.append(forward)
+            // Check for initial double step
+            if (color == .white && position.0 == 1 || color == .black && position.0 == 6) {
+                let doubleStep = (position.0 + 2 * direction, position.1)
+                if isValidPosition(doubleStep) && board[doubleStep.0][doubleStep.1] == nil {
+                    moves.append(doubleStep)
+                }
+            }
         }
+        // Diagonal captures
         let diagonals = [(forward.0, position.1 + 1), (forward.0, position.1 - 1)]
         for diag in diagonals {
             if isValidPosition(diag), let piece = board[diag.0][diag.1], piece.color != color {
@@ -30,8 +38,8 @@ struct Pawn: ChessPiece {
         return moves
     }
 
-    mutating func move(to position: (Int, Int)) {
-        self.position = position
+    mutating func move(to newPosition: (Int, Int)) {
+        self.position = newPosition
     }
 
     private func isValidPosition(_ position: (Int, Int)) -> Bool {
