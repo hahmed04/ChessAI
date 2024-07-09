@@ -64,6 +64,10 @@ struct ContentView: View {
             board[0][3] = Queen(position: (0, 3), color: .white) // White queen's starting position
             board[7][3] = Queen(position: (7, 3), color: .black) // Black queen's starting position
         
+        // Placing the white king at position e1 and the black king at position e8
+            board[0][4] = King(position: (0, 4), color: .white) // White king's starting position
+            board[7][4] = King(position: (7, 4), color: .black) // Black king's starting position
+        
             
         
 
