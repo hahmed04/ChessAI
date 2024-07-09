@@ -11,7 +11,7 @@ struct Pawn: ChessPiece {
     var position: (Int, Int)
     let color: Color
     var image: Image {
-        Image(systemName: "pawn.fill")  // Use a custom image in your app assets
+        color == .white ? Image("white_pawn") : Image("black_pawn")  // Use a custom image in your app assets
     }
 
     func availableMoves(in board: [[ChessPiece?]]) -> [(Int, Int)] {

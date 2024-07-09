@@ -14,6 +14,7 @@
 		FE5EC53A2C3CCB6D006D4539 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EC5392C3CCB6D006D4539 /* ContentView.swift */; };
 		FE5EC53C2C3CCB70006D4539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5EC53B2C3CCB70006D4539 /* Assets.xcassets */; };
 		FE5EC53F2C3CCB70006D4539 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5EC53E2C3CCB70006D4539 /* Preview Assets.xcassets */; };
+		FE5EC54A2C3CED44006D4539 /* DebuggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5EC5492C3CED44006D4539 /* DebuggingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FE5EC5392C3CCB6D006D4539 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE5EC53B2C3CCB70006D4539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE5EC53E2C3CCB70006D4539 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE5EC5492C3CED44006D4539 /* DebuggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				FE5EC5392C3CCB6D006D4539 /* ContentView.swift */,
 				FE5EC53B2C3CCB70006D4539 /* Assets.xcassets */,
 				FE5EC53D2C3CCB70006D4539 /* Preview Content */,
+				FE5EC5492C3CED44006D4539 /* DebuggingView.swift */,
 			);
 			path = ChessAI;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				FE5EC53A2C3CCB6D006D4539 /* ContentView.swift in Sources */,
 				7E9B3CCE2C3CE40800A7A9EC /* Player.swift in Sources */,
 				FE5EC5382C3CCB6D006D4539 /* ChessAIApp.swift in Sources */,
+				FE5EC54A2C3CED44006D4539 /* DebuggingView.swift in Sources */,
 				7E9B3CD02C3CE56300A7A9EC /* chesspieces.swift in Sources */,
 				7E9B3CD32C3CE5BF00A7A9EC /* pawn.swift in Sources */,
 			);
@@ -292,6 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChessAI/Preview Content\"";
+				DEVELOPMENT_TEAM = P766MMY3WN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -320,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChessAI/Preview Content\"";
+				DEVELOPMENT_TEAM = P766MMY3WN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
