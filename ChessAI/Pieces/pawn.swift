@@ -23,6 +23,15 @@ struct Pawn: ChessPiece {
         let forward = (position.0 + direction, position.1)
         if isValidPosition(forward) && board[forward.0][forward.1] == nil {
             moves.append(forward)
+            
+            // Check for initial double step
+            if (color == .white && position.0 == 1 || color == .black && position.0 == 6) {
+                let doubleStep = (position.0 + 2 * direction, position.1)
+                if isValidPosition(doubleStep) && board[doubleStep.0][doubleStep.1] == nil {
+                    moves.append(doubleStep)
+                }
+            }
+            
         }
         let diagonals = [(forward.0, position.1 + 1), (forward.0, position.1 - 1)]
         for diag in diagonals {
